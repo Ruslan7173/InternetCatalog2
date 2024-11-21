@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог автомобильных Шин</title>
+</head>
+<body>
+<h1>Список Шин</h1>
+<table border="2">
+    <tr>
+        <th>Название шин</th>
+        <th>Изображение</th>
+        <th>Действия</th>
+        <th>Удалить из списка</th>
+    </tr>
+    <tr th:each="product : ${products}">
+        <td>
+            <a th:href="@{/product/{id}(id=${product.id})}" th:text="${product.name}">Название Шины</a>
+        </td>
+        <td>
+            <img th:src="Кама.jpg" alt="картинка шины" width="100" height="auto">
+
+        </td>
+        <td>
+            <a th:href="@{'/prodInfo?id=' + ${product.id}}">Просмотр Шины</a>
+
+        </td>
+        <td>
+            <a th:href="@{'/deleteProd?id=' + ${product.id}}">Удалить из списка шин</a>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
