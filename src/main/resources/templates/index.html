@@ -18,7 +18,7 @@
             <a th:href="@{/product/{id}(id=${product.id})}" th:text="${product.name}">Название Шины</a>
         </td>
         <td>
-            <img th:src="Кама.jpg" alt="картинка шины" width="100" height="auto">
+            <img th:src="@{${product.imageUrl}}" alt="картинка шины" width="100" height="auto">
 
         </td>
         <td>

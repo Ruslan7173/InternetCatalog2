@@ -15,9 +15,9 @@ public class ProductService {
 
     public ProductService() {
         System.out.println("создается ProductService");
-        products.add(new Product(1, "Шина Кама \"размер r16 205/55\"", "/static/Кама.jpg"));
-        products.add(new Product(2, "Шина Кордиан \"r16 215/60\"", "/static/Кордиан.jpg"));
-        products.add(new Product(3, "Шина Нордман \"r16 220/65\"", "/static/Нордман.jpg"));
+        products.add(new Product(1, "Шина Кама \"размер r16 205/55\"", "/Кама.jpg"));
+        products.add(new Product(2, "Шина Кордиан \"r16 215/60\"", "/Кордиан.jpg"));
+        products.add(new Product(3, "Шина Нордман \"r16 220/65\"", "/Нордман.jpg"));
     }
 
     public Product getProductById(int id) {

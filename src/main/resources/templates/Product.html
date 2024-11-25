@@ -8,11 +8,8 @@
 <h1>Параметры Шин</h1>
 <div>
     <h2 th:text="${product.name}"></h2>
-    <img src="Кама.jpg" alt="картинка шины">
-    <h2 th:text="${product.name}"></h2>
-    <img src="Кордиан.jpg" alt="картинка шины">
-    <h2 th:text="${product.name}"></h2>
-    <img src="Нордман.jpg" alt="картинка шины">
+    <img th:src="@{${product.imageUrl}}" alt="картинка шины">
+
     <p>ID: <span th:text="${product.id}"></span></p>
 </div>
 <a href="/">Назад к списку товаров</a>
