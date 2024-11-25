@@ -11,7 +11,7 @@ import java.util.List;
 public class ControllerInt {
 
     @Autowired
-    ProductService productService;
+    ProductService productService; // проверка
 
     public ControllerInt() {
         System.out.println("Создается контроллер");
